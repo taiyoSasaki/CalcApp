@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             startActivity(intent)
         } catch (e: Exception) {
             Log.d("NullCheck", "nullを検出")
-            Snackbar.make(v,"2つの数字を入力してください", Snackbar.LENGTH_LONG)
+            make(v,"2つの数字を入力してください", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
 
